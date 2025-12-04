@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuckSena - La Evolución del Aprendizaje</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="landing.css">
+</head>
+
+<!-- Mermaid.js -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js"></script>
+<script>
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">MuckSena<span class="dot">.</span></a>
+            <div class="nav-links">
+                <a href="#features">Características</a>
+                <a href="#courses">Cursos</a>
+                <a href="#testimonials">Testimonios</a>
+            </div>
+            <div class="auth-buttons">
+                <a href="dashboard.html" class="btn btn-outline">Iniciar Sesión</a>
+                <a href="dashboard.html" class="btn btn-primary">Regístrate Gratis</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Nuevo: Rutas de Aprendizaje 2024</span>
+                <h1>Domina el futuro con <span class="highlight">MuckSena</span></h1>
+                <p>La plataforma educativa diseñada para potenciar tus habilidades técnicas. Cursos actualizados, mentores expertos y una comunidad que no para de crecer.</p>
+                <div class="hero-btns">
+                    <a href="dashboard.html" class="btn btn-primary btn-lg">Comenzar Ahora</a>
+                    <a href="#features" class="btn btn-text">Saber más ↓</a>
+                </div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <strong>+500</strong>
+                        <span>Cursos</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>+50k</strong>
+                        <span>Estudiantes</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>4.9/5</strong>
+                        <span>Calificación</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <!-- Placeholder para imagen heroica. Puedes usar una captura de tu app o una ilustración -->
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Estudiantes aprendiendo">
+                    <div class="floating-card card-1">
+                        <span>🎓</span>
+                        <div>
+                            <strong>Certificado</strong>
+                            <small>Desarrollo Web Fullstack</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Por qué elegir MuckSena?</h2>
+                <p>Todo lo que necesitas para llevar tu carrera al siguiente nivel.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-box">🔐</div>
+                    <h3>Seguridad Total</h3>
+                    <p>Acceso seguro con OAuth 2.0 y protección de datos de nivel empresarial.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box">🚀</div>
+                    <h3>Aprendizaje a tu Ritmo</h3>
+                    <p>Accede a los contenidos 24/7 desde cualquier dispositivo. Tú marcas el paso.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box">💻</div>
+                    <h3>Proyectos Reales</h3>
+                    <p>Aprende haciendo. Construye un portafolio sólido con ejercicios prácticos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Technical Documentation Section -->
+    <section id="docs" class="docs-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Documentación Técnica</h2>
+                <p>Detalles técnicos y arquitectura del sistema MuckSena.</p>
+            </div>
+            <div class="docs-tabs">
+                <button class="tab-btn active" onclick="openTab(event, 'prereq')">Prerrequisitos</button>
+                <button class="tab-btn" onclick="openTab(event, 'stack')">Stack Tecnológico</button>
+                <button class="tab-btn" onclick="openTab(event, 'diagrams')">Diagramas</button>
+                <button class="tab-btn" onclick="openTab(event, 'db')">Base de Datos</button>
+            </div>
+            <div class="tab-content active" id="prereq">
+                <div class="doc-card">
+                    <h3>📋 Prerrequisitos de Instalación</h3>
+                    <ul class="check-list">
+                        <li><strong>Node.js:</strong> Versión 14 o superior.</li>
+                        <li><strong>MongoDB Atlas:</strong> Cuenta gratuita y cluster configurado.</li>
+                        <li><strong>Google Cloud:</strong> Proyecto creado para credenciales OAuth 2.0.</li>
+                        <li><strong>Git:</strong> Para control de versiones.</li>
+                        <li><strong>Navegador Web:</strong> Chrome, Firefox o Edge actualizado.</li>
+                    </ul>
+                    <div class="code-block">
+                        <h4>Scripts de Instalación</h4>
+                        <pre><code># Clonar repositorio
+git clone https://github.com/ArlexAmado/muckSena.git
+# Instalar dependencias
+npm install
+# Iniciar servidor
+npm start</code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="stack">
+                <div class="doc-card">
+                    <h3>🛠️ Frameworks y Estándares</h3>
+                    <div class="stack-grid">
+                        <div class="stack-item">
+                            <h4>Frontend</h4>
+                            <p>HTML5, CSS3 (Vanilla), JavaScript (ES6+)</p>
+                        </div>
+                        <div class="stack-item">
+                            <h4>Backend</h4>
+                            <p>Node.js, Express.js</p>
+                        </div>
+                        <div class="stack-item">
+                            <h4>Base de Datos</h4>
+                            <p>MongoDB, Mongoose ODM</p>
+                        </div>
+                        <div class="stack-item">
+                            <h4>Seguridad</h4>
+                            <p>OAuth 2.0 (Google), JWT, Bcrypt</p>
+                        </div>
+                        <div class="stack-item">
+                            <h4>Estándares</h4>
+                            <p>RESTful API, MVC Architecture, ISO 14724 (Mantenimiento)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="diagrams">
+                <div class="doc-card">
+                    <h3>📊 Diagramas del Sistema</h3>
+                    <div class="diagram-gallery">
+                        <div class="diagram-item">
+                            <h4>Casos de Uso</h4>
+                            <img src="casos.png" alt="Diagrama de Casos de Uso">
+                            <p>Interacciones principales de los usuarios con el sistema.</p>
+                        </div>
+                        <div class="diagram-item">
+                            <h4>Componentes</h4>
+                            <img src="componentes.png" alt="Diagrama de Componentes">
+                            <p>Estructura modular de la aplicación.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="db">
+                <div class="doc-card">
+                    <h3>💾 Modelo de Datos</h3>
+                    <div class="diagram-gallery">
+                        <div class="diagram-item">
+                            <h4>Modelo Entidad-Relación</h4>
+                            <img src="mer.png" alt="MER">
+                        </div>
+                    </div>
+                    <div class="data-dictionary">
+                        <h4>Diccionario de Datos (Resumen)</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Entidad</th>
+                                    <th>Atributo</th>
+                                    <th>Tipo</th>
+                                    <th>Descripción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Usuario</td>
+                                    <td>_id</td>
+                                    <td>ObjectId</td>
+                                    <td>Identificador único</td>
+                                </tr>
+                                <tr>
+                                    <td>Usuario</td>
+                                    <td>email</td>
+                                    <td>String</td>
+                                    <td>Correo electrónico (único)</td>
+                                </tr>
+                                <tr>
+                                    <td>Usuario</td>
+                                    <td>password</td>
+                                    <td>String</td>
+                                    <td>Hash de contraseña</td>
+                                </tr>
+                                <tr>
+                                    <td>Usuario</td>
+                                    <td>googleId</td>
+                                    <td>String</td>
+                                    <td>ID de Google (OAuth)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                     <div class="diagram-item">
+                            <h4>Diccionario de Datos</h4>
+                            <img src="diccionario.png" alt="Diagrama de Componentes">
+                            <p>Este diagrama detalla la estructura exacta de las colecciones en la base de datos, incluyendo tipos de datos y notas sobre cada campo..</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Tech Stack / Marquee -->
+    <section class="tech-stack">
+        <div class="container">
+            <p>Aprende las tecnologías más demandadas</p>
+            <div class="logos-grid">
+                <span>JavaScript</span>
+                <span>Python</span>
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+                <span>Docker</span>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Final -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-box">
+                <h2>¿Listo para empezar tu viaje?</h2>
+                <p>Únete a miles de estudiantes que ya están transformando su futuro profesional.</p>
+                <a href="dashboard.html" class="btn btn-primary btn-lg">Crear Cuenta Gratis</a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h3>MuckSena</h3>
+                <p>Educación de calidad al alcance de todos.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Plataforma</h4>
+                    <a href="#">Cursos</a>
+                    <a href="#">Precios</a>
+                    <a href="#">Empresas</a>
+                </div>
+                <div class="link-group">
+                    <h4>Soporte</h4>
+                    <a href="#">Ayuda</a>
+                    <a href="#">Contacto</a>
+                    <a href="#">Términos</a>
+                </div>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; 2025 MuckSena. (Arlex Amado 2885525 Sena) <br> Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            setTimeout(() => {
+                document.getElementById(tabName).classList.add("active");
+            }, 10);
+            evt.currentTarget.className += " active";
+        }
+        
+        // Open default tab
+        document.getElementById("prereq").style.display = "block";
+    </script>
+</body>
+</html>
